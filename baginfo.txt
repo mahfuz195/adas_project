@@ -1,0 +1,76 @@
+path:         sensorfeeds-forklift-driving-into-Pedestrian.bag
+version:      2.0
+duration:     5:24s (324s)
+start:        Dec 03 2020 15:45:45.40 (1607028345.40)
+end:          Dec 03 2020 15:51:09.90 (1607028669.90)
+size:         2.5 GB
+messages:     241179
+compression:  lz4 [3648/3648 chunks; 56.17%]
+uncompressed: 4.4 GB @ 13.8 MB/s
+compressed:   2.4 GB @  7.7 MB/s (56.17%)
+types:        bond/Status                           [eacc84bf5d65b6777d4c50f463dfb9c8]
+              diagnostic_msgs/DiagnosticArray       [60810da900de1dd6ddd437c3503511da]
+              dynamic_reconfigure/Config            [958f16a05573709014982821e6822580]
+              dynamic_reconfigure/ConfigDescription [757ce9d44ba8ddd801bb30bc456f946f]
+              nav_msgs/Odometry                     [cd5e73d190d741a2f92e81eda573aca7]
+              realsense2_camera/Extrinsics          [3627b43073f4cd5dd6dc179a49eda2ad]
+              realsense2_camera/IMUInfo             [a02adb3a99530b11ba18a16f40f9512a]
+              rosgraph_msgs/Log                     [acffd30cd6b6de30f120938c17c593fb]
+              sensor_msgs/CameraInfo                [c9a58c1b0b154e0e6da7578cb991d214]
+              sensor_msgs/Image                     [060021388200f6f0f447d0fcd9c64743]
+              sensor_msgs/Imu                       [6a62c6daae103f4ff57a132d6f95cec2]
+              sensor_msgs/PointCloud2               [1158d486dd51d683ce2f1be655c3c181]
+              tf2_msgs/TFMessage                    [94810edda583a504dfda3829e70d7eec]
+              theora_image_transport/Packet         [33ac4e14a7cff32e7e0d65f18bb410f3]
+topics:       /D435I/accel/imu_info                                                1 msg     : realsense2_camera/IMUInfo            
+              /D435I/accel/sample                                              79551 msgs    : sensor_msgs/Imu                      
+              /D435I/color/camera_info                                          1465 msgs    : sensor_msgs/CameraInfo               
+              /D435I/color/image_raw                                            1465 msgs    : sensor_msgs/Image                    
+              /D435I/color/image_raw/theora                                     1464 msgs    : theora_image_transport/Packet        
+              /D435I/color/image_raw/theora/parameter_descriptions                 1 msg     : dynamic_reconfigure/ConfigDescription
+              /D435I/color/image_raw/theora/parameter_updates                      1 msg     : dynamic_reconfigure/Config           
+              /D435I/depth/camera_info                                          4033 msgs    : sensor_msgs/CameraInfo               
+              /D435I/depth/color/points                                            2 msgs    : sensor_msgs/PointCloud2              
+              /D435I/depth/image_rect_raw                                       4031 msgs    : sensor_msgs/Image                    
+              /D435I/depth/image_rect_raw/theora                                   3 msgs    : theora_image_transport/Packet        
+              /D435I/depth/image_rect_raw/theora/parameter_descriptions            1 msg     : dynamic_reconfigure/ConfigDescription
+              /D435I/depth/image_rect_raw/theora/parameter_updates                 1 msg     : dynamic_reconfigure/Config           
+              /D435I/extrinsics/depth_to_color                                     1 msg     : realsense2_camera/Extrinsics         
+              /D435I/gyro/imu_info                                                 1 msg     : realsense2_camera/IMUInfo            
+              /D435I/gyro/sample                                              126010 msgs    : sensor_msgs/Imu                      
+              /D435I/motion_module/parameter_descriptions                          1 msg     : dynamic_reconfigure/ConfigDescription
+              /D435I/motion_module/parameter_updates                               2 msgs    : dynamic_reconfigure/Config           
+              /D435I/pointcloud/parameter_descriptions                             1 msg     : dynamic_reconfigure/ConfigDescription
+              /D435I/pointcloud/parameter_updates                                  2 msgs    : dynamic_reconfigure/Config           
+              /D435I/realsense2_camera_manager/bond                              640 msgs    : bond/Status                           (2 connections)
+              /D435I/rgb_camera/auto_exposure_roi/parameter_descriptions           1 msg     : dynamic_reconfigure/ConfigDescription
+              /D435I/rgb_camera/auto_exposure_roi/parameter_updates                2 msgs    : dynamic_reconfigure/Config           
+              /D435I/rgb_camera/parameter_descriptions                             1 msg     : dynamic_reconfigure/ConfigDescription
+              /D435I/rgb_camera/parameter_updates                                  2 msgs    : dynamic_reconfigure/Config           
+              /D435I/stereo_module/auto_exposure_roi/parameter_descriptions        1 msg     : dynamic_reconfigure/ConfigDescription
+              /D435I/stereo_module/auto_exposure_roi/parameter_updates             2 msgs    : dynamic_reconfigure/Config           
+              /D435I/stereo_module/parameter_descriptions                          1 msg     : dynamic_reconfigure/ConfigDescription
+              /D435I/stereo_module/parameter_updates                               2 msgs    : dynamic_reconfigure/Config           
+              /T265/accel/imu_info                                                 1 msg     : realsense2_camera/IMUInfo            
+              /T265/accel/sample                                                 831 msgs    : sensor_msgs/Imu                      
+              /T265/fisheye1/camera_info                                         835 msgs    : sensor_msgs/CameraInfo               
+              /T265/fisheye1/image_raw                                           834 msgs    : sensor_msgs/Image                    
+              /T265/fisheye1/image_raw/theora                                    836 msgs    : theora_image_transport/Packet        
+              /T265/fisheye1/image_raw/theora/parameter_descriptions               1 msg     : dynamic_reconfigure/ConfigDescription
+              /T265/fisheye1/image_raw/theora/parameter_updates                    1 msg     : dynamic_reconfigure/Config           
+              /T265/fisheye2/camera_info                                         240 msgs    : sensor_msgs/CameraInfo               
+              /T265/fisheye2/image_raw                                           241 msgs    : sensor_msgs/Image                    
+              /T265/fisheye2/image_raw/theora                                    244 msgs    : theora_image_transport/Packet        
+              /T265/fisheye2/image_raw/theora/parameter_descriptions               1 msg     : dynamic_reconfigure/ConfigDescription
+              /T265/fisheye2/image_raw/theora/parameter_updates                    1 msg     : dynamic_reconfigure/Config           
+              /T265/gyro/imu_info                                                  1 msg     : realsense2_camera/IMUInfo            
+              /T265/gyro/sample                                                 2443 msgs    : sensor_msgs/Imu                      
+              /T265/odom/sample                                                 2722 msgs    : nav_msgs/Odometry                    
+              /T265/realsense2_camera_manager/bond                               640 msgs    : bond/Status                           (2 connections)
+              /T265/tracking_module/parameter_descriptions                         1 msg     : dynamic_reconfigure/ConfigDescription
+              /T265/tracking_module/parameter_updates                              2 msgs    : dynamic_reconfigure/Config           
+              /diagnostics                                                      1127 msgs    : diagnostic_msgs/DiagnosticArray       (2 connections)
+              /rosout                                                           4384 msgs    : rosgraph_msgs/Log                     (6 connections)
+              /rosout_agg                                                       4379 msgs    : rosgraph_msgs/Log                    
+              /tf                                                               2722 msgs    : tf2_msgs/TFMessage                   
+              /tf_static                                                           3 msgs    : tf2_msgs/TFMessage                    (3 connections)
