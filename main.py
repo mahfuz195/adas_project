@@ -212,7 +212,10 @@ for topic,msg, t in bag.read_messages(topics=[topic_raw_image,topic_odom,topic_d
             cv2.putText(img,"Dist={:0.3f}".format(dist),(20,350), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 2)
             v_loc = "veh pos:" + vehicle.getLocToString()
             cv2.putText(img, v_loc, (20,450), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 2)
+            time_info = "Time:"+ str(cur_time)
             
+            cv2.putText(img, time_info, (20,50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 2)
+
             images = np.hstack((img, d_color_map)) 
             
             cv2.imshow('Collision Warning!',images)
